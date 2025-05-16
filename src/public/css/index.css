@@ -1,0 +1,227 @@
+body {
+    font-family: Inika;
+}
+
+.header {
+    background: #ffffff;
+    border: 1px solid #E0DFDE;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 150px;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    color: #8B7969;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: none;
+    line-height: 100%;
+}
+
+.contact-form__content {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+.contact-form__title {
+    color: #8B7969;
+    line-height: 100%;
+    text-align: center;
+
+    font-size: 35px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.contact-form__form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.contact-form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+.contact-form__label-wrapper {
+    width: 40%;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.contact-form__label {
+    display: inline-block;
+    font-size: 20px;
+    color: #8B7969;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.contact-form__required {
+    color: red;
+    font-weight: 400;
+    line-height: 100%;
+    margin-left: 5px;
+}
+
+.contact-form__field {
+    width: 75%;
+}
+
+.contact-form__field--name input,
+.contact-form__field--tel input,
+.contact-form__field--email input,
+.contact-form__field--address input,
+.contact-form__field--building input,
+.contact-form__field--select select,
+.contact-form__field--textarea textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+
+    font-size: 14px;
+    background: #F4F4F4;
+}
+
+.contact-form__field--name {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form__field--name label {
+    flex: 1;
+}
+
+.contact-form__field--gender {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    color: #8B7969;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+
+.contact-form__radio {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.contact-form__radio input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.contact-form__radio .contact-form__custom-radio::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #8B7969;
+    border-radius: 50%;
+}
+
+.contact-form__radio input[type="radio"]:checked+.contact-form__custom-radio::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #8B7969;
+}
+
+
+.contact-form__field--tel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-form__field--tel label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    color: #8B7969;
+    font-weight: 400;
+}
+
+.contact-form__field--select {
+    position: relative;
+    width: 50%;
+}
+
+.contact-form__field--select select {
+    color: #BEB1A6;
+    appearance: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.contact-form__field--select::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #BEB1A6;
+}
+
+.contact-form__field--textarea textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.contact-form__error p {
+    color: red;
+    font-size: 14px;
+    margin: 4px 0 0 0;
+}
+
+.contact-form__button-wrapper {
+    margin: 40px;
+    text-align: center;
+}
+
+.contact-form__button {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    background: #82756A;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+::placeholder {
+    color: #BEB1A6;
+}
+
+
+
+
+
+
+
+
+
+
+
+

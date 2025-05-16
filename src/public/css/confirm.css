@@ -1,0 +1,137 @@
+body {
+    font-family: Inika;
+}
+
+.header {
+    background: white;
+    border: 1px solid #E0DFDE;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logo {
+    color: #8B7969;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: none;
+    line-height: 100%;
+}
+
+.confirm__content {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+.confirm__title {
+    color: #8B7969;
+    line-height: 100%;
+    text-align: center;
+
+    font-size: 35px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.confirm-table {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.confirm-table__row {
+    border: 1px solid #ddd;
+}
+
+.confirm-table__header {
+    padding-left: 70px;
+    width: 30%;
+    background-color: #BAA899;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: left;
+}
+
+.confirm-table__text {
+    padding: 20px 35px;
+    color: #8B7969;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+
+.confirm-table__text input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #8B7969;
+    font-size: 20px;
+    font-family: inika;
+}
+
+.confirm-table__text p {
+    margin: 0;
+}
+
+.confirm-table__last-name::after {
+    content: " ";
+    margin-right: 10px; }
+
+.confirm-table__textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    pointer-events: none;
+    font-size: 20px;
+    line-height: 28px;
+    color: #8B7969;
+    font-family: inika;
+}
+
+.form__button {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding-left: 100px;
+    flex-wrap: wrap;
+}
+
+.form__button-submit {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    background: #82756A;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.form__button-submit--correction {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    background: none;
+    color: #8B7969;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form__button-submit--correction:hover {
+    background-color: #e5d8cd;
+}
+

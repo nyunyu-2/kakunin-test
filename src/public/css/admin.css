@@ -1,0 +1,411 @@
+body {
+    font-family: Inika;
+}
+
+.header {
+    background: #ffffff;
+    border: 1px solid #E0DFDE;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 150px;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__logo {
+    color: #8B7969;
+    font-weight: 400;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+
+.header__button a {
+    width: 100px;
+    height: 34px;
+    background-color: #F0F0F099;
+    border: 1px solid #D9C6B5;
+    color: #D9C6B5;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.admin-form__content {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+.admin-form__title {
+    color: #8B7969;
+    line-height: 100%;
+    text-align: center;
+
+    font-weight: 400;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.admin-form__search {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.admin-form__search-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    width: 40ch;
+    border: 1px solid #E3DED9;
+    padding: 15px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #BEB1A6;
+}
+
+.admin-form__select {
+    position: relative;
+}
+
+.admin-form__select select {
+    width: 100%;
+    height: 50px;
+    padding: 0 35px 0 5px;
+    font-size: 17px;
+    color: #8B7969;
+    background-color: #F4F4F4;
+    border: 1px solid #E3DED9;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.admin-form__select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid #E0DFDE;
+}
+
+.admin-form__date-picker {
+    position: relative;
+    display: inline-block;
+}
+
+.admin-form__date-picker input[type="date"] {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px 0 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #F4F4F4;
+    border: 1px solid #E3DED9;
+    font-size: 17px;
+    color: #8B7969;
+}
+
+.admin-form__date-picker input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.admin-form__date-picker::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 15px solid #E0DFDE;
+}
+
+.admin-form__search-button {
+    background-color: #82756A;
+    border: 1px solid #8B7969;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    width: 102px;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.admin-form__reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9C6B5;
+    border: 1px solid #D9C6B5;
+    width: 102px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.admin-form__reset-button a {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+.admin-export-pagination {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin:  0 auto;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.export-button {
+    width: 148px;
+    height: 39px;
+    background-color: #E1DBD699;
+    border: none;
+    color: #8B7969;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 7px;
+}
+
+
+.pagination {
+    display: flex;
+    list-style: none;
+
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 2px 12px;
+    text-decoration: none;
+    color: #8B7969;
+    border: 1px solid #E0DFDE;
+    font-size: 18px;
+}
+
+.pagination a:hover {
+    background-color: #eee;
+}
+
+.pagination .active a {
+    background-color: #8B7969;
+    color: white;
+    border-color: #8a7765;
+}
+
+.admin-form__table-wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.admin-table {
+    width: 100%;
+    border: 1px solid #E0DFDE;
+    margin-bottom: 50px;
+}
+
+.admin-table thead {
+    background-color: #8b7a69;
+    color: #ffffff;
+}
+
+.admin-table td {
+    padding: 20px 30px;
+    text-align: left;
+    border-bottom: 1px solid #E0DFDE;
+    font-size: 20px;
+    color: #8B7969;
+    font-weight: 400;
+}
+
+.admin-table th {
+    padding: 20px 30px;
+    text-align: left;
+    border-bottom: 1px solid #E0DFDE;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.admin-table table {
+    width: 100%;
+}
+
+.admin-table__detail-button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #D9C6B5;
+    background-color: #F4F4F44D;
+    border: 1px solid #D9C6B5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.admin-table__detail-button:hover {
+    background-color: #e5d8cd;
+}
+
+
+.contact-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-modal.is-open {
+    display: flex;
+}
+
+.contact-modal-set input[id^="modal-toggle-"]:checked~.contact-modal__wrapper .contact-modal {
+    display: flex;
+}
+/* =============================
+    モーダル本体
+  ============================= */
+.contact-modal__body{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 100px 60px 80px 80px;
+    width: 805px;
+    max-width: 100%;
+    z-index: 1000;
+    box-shadow: 4px 4px 4px #8B796940;
+    border: 1px solid #8B7969;
+}
+
+.contact-modal__table th {
+    width: 35%;
+    text-align: left;
+    padding: 12px 0;
+    vertical-align: top;
+    color: #8B7969;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.contact-modal__table td {
+    padding: 12px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #8B7969;
+    border: none;
+}
+
+.last-name::after {
+    content: " ";
+    margin-right: 10px;
+}
+
+.contact-modal__textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    pointer-events: none;
+    font-size: 20px;
+    line-height: 28px;
+    color: #8B7969;
+    font-family: inika;
+    overflow: hidden;
+}
+/* =============================
+    閉じるボタン（×）
+  ============================= */
+.contact-modal__close-button {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    border: 1px solid #8B7969;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    /* 丸くする */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* バツ印を見せるための2本線 */
+.contact-modal__close-button span {
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    background-color: #8B7969;
+}
+
+.contact-modal__close-button span:first-child {
+    transform: rotate(45deg);
+}
+
+.contact-modal__close-button span:last-child {
+    transform: rotate(-45deg);
+}
+
+.contact-modal__delete-button {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.delete-form__button-submit {
+    background-color: #BA370D;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+

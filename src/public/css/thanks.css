@@ -1,0 +1,61 @@
+/* 中央配置の親コンテナ */
+.thanks-content {
+    position: relative;
+    max-width: 1512px;
+    height: 982px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 背景の "Thank you" テキスト */
+.thanks-content__background-text {
+    position: absolute;
+    font-size: 280px;
+    font-weight: 400;
+    color: #8B79690D;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+    font-family: Inika;
+}
+
+/* 本文の見出し */
+.thanks-content__text {
+    z-index: 1;
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 30px;
+    color: #8B7969;
+    line-height: 100%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.thanks-content__button-wrapper {
+    margin: 60px;
+    text-align: center;
+    z-index: 1;
+}
+
+.thanks-content__button {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    background: #82756A;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: inika;
+    text-decoration: none;
+}
